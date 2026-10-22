@@ -1,0 +1,18 @@
+{
+  "source": "Capturas entregadas por el usuario de la ejecución en VS Code",
+  "images": [
+    {
+      "file": "screenshots/01_configuracion_python313.png",
+      "content": "Configuración y salida de Python 3.13.14"
+    },
+    {
+      "file": "screenshots/02_distribucion_controles.png",
+      "content": "Distribución y diez controles de aceptación"
+    },
+    {
+      "file": "screenshots/03_reproduccion_pruebas.png",
+      "content": "Reproducción True, coincidencia True y 16 pruebas aprobadas en VS Code"
+    }
+  ],
+  "additional_environment_test": "pytest_python313.xml: 16 pruebas, cero fallos"
+}

@@ -1,0 +1,21 @@
+{
+  "all_passed": true,
+  "checks": {
+    "eligibility": true,
+    "historical_label": true,
+    "integrity": true,
+    "no_shared_problems": true,
+    "partition_assignment": true,
+    "quota": true,
+    "required_fields": true,
+    "unique_normalized_hashes": true,
+    "unique_submission_ids": true,
+    "unique_users_per_problem": true
+  },
+  "integrity_errors": [],
+  "user_overlap": {
+    "train/test": 0,
+    "train/validation": 0,
+    "validation/test": 0
+  }
+}

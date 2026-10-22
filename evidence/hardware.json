@@ -1,0 +1,8 @@
+{
+  "cpu": "AMD Ryzen 5 5500U",
+  "physical_cores": 6,
+  "logical_processors": 12,
+  "ram_gib": 19.3,
+  "gpu": "AMD Radeon Graphics",
+  "gpu_required_for_iteration": false
+}

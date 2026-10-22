@@ -1,0 +1,18 @@
+{
+  "iteration": "001-curacion-codenet",
+  "requirements_checked": 12,
+  "success_criteria_checked": 6,
+  "user_stories_checked": 3,
+  "acceptance_scenarios_checked": 6,
+  "constitution_principles_checked": 5,
+  "functional_findings": 0,
+  "result": "converged",
+  "evidence": [
+    "full_source_selection.json",
+    "acceptance.json",
+    "pytest.xml",
+    "pytest_python313.xml",
+    "notebook_execution.json"
+  ],
+  "scope": "Curación de 50 muestras históricas C++; sin entrenamiento ni interfaz docente."
+}

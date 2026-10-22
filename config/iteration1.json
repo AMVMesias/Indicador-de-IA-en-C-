@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "seed": 20261021,
+  "samples_per_problem": 10,
+  "cutoff_utc": "2021-05-01T00:00:00Z",
+  "label": "HISTORICO_CODENET",
+  "label_basis": "Procedencia histórica de CodeNet; autoría individual no verificada",
+  "problems": {
+    "p02401": {"title": "Simple Calculator", "topic": "Operadores y selección", "split": "train"},
+    "p02402": {"title": "Min, Max and Sum", "topic": "Recorrido y acumulación", "split": "train"},
+    "p02403": {"title": "Print a Rectangle", "topic": "Ciclos anidados", "split": "train"},
+    "p02407": {"title": "Reversing Numbers", "topic": "Arreglos y recorrido inverso", "split": "validation"},
+    "p02416": {"title": "Sum of Numbers", "topic": "Cadenas y suma de dígitos", "split": "test"}
+  }
+}

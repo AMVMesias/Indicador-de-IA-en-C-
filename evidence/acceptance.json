@@ -1,0 +1,49 @@
+{
+  "all_checks_passed": true,
+  "by_problem": {
+    "p02401": 10,
+    "p02402": 10,
+    "p02403": 10,
+    "p02407": 10,
+    "p02416": 10
+  },
+  "by_split": {
+    "test": 10,
+    "train": 30,
+    "validation": 10
+  },
+  "checks": {
+    "eligibility": true,
+    "historical_label": true,
+    "integrity": true,
+    "no_shared_problems": true,
+    "partition_assignment": true,
+    "quota": true,
+    "required_fields": true,
+    "unique_normalized_hashes": true,
+    "unique_submission_ids": true,
+    "unique_users_per_problem": true
+  },
+  "classification_training_performed": false,
+  "independent_reproduction": true,
+  "iteration": "001-curacion-codenet",
+  "manifest_sha256": "108e436464cefd502a7d685f7e62f247818f8d9a26d9acc0e2188b9e33623610",
+  "matches_full_source_manifest": true,
+  "notebook_cells_completed": true,
+  "pipeline_version": "1.0.0",
+  "python_version": "3.13.14",
+  "recorded_at_utc": "2026-10-22T04:13:27.051514+00:00",
+  "selected": 50,
+  "source_mode": "subconjunto reproducible",
+  "tests": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 16
+  },
+  "user_overlap": {
+    "train/test": 0,
+    "train/validation": 0,
+    "validation/test": 0
+  }
+}

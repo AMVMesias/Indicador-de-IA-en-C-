@@ -1,0 +1,33 @@
+{
+  "tool": "GitHub Spec Kit",
+  "version": "1.2.2",
+  "integration": "codex",
+  "source_tag": "v1.2.2",
+  "method": "Aplicación de las instrucciones de las habilidades oficiales en la sesión de Codex y ejecución de sus scripts de resolución y preparación.",
+  "skills_applied": [
+    "speckit-constitution",
+    "speckit-specify",
+    "speckit-plan",
+    "speckit-tasks",
+    "speckit-implement",
+    "speckit-converge"
+  ],
+  "coverage_note": "coverage es el informe académico; converge es la habilidad oficial de revisión final.",
+  "scripts_executed": [
+    "resolve_template.py constitution-template --json",
+    "resolve_template.py spec-template --json",
+    "setup_plan.py --json",
+    "setup_tasks.py --json",
+    "check_prerequisites.py --json --require-tasks --include-tasks",
+    "check_prerequisites.py --json --require-spec --require-tasks --include-tasks"
+  ],
+  "convergence": {
+    "functional_requirements": 12,
+    "success_criteria": 6,
+    "user_stories": 3,
+    "acceptance_scenarios": 6,
+    "constitution_principles": 5,
+    "functional_findings": 0
+  },
+  "academic_report": "Un PDF con seis capítulos e índice navegable."
+}

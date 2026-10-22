@@ -1,0 +1,72 @@
+{
+  "archive_bytes": 8343137473,
+  "archive_filename": "Project_CodeNet.tar.gz",
+  "full_selection_summary": {
+    "by_problem": {
+      "p02401": 10,
+      "p02402": 10,
+      "p02403": 10,
+      "p02407": 10,
+      "p02416": 10
+    },
+    "by_split": {
+      "test": 10,
+      "train": 30,
+      "validation": 10
+    },
+    "classification_training_performed": false,
+    "config_sha256": "e5799bb6e25862893b357ebc6df5b754baad2a3ab8873c09633021b8a3fe5dad",
+    "duration_seconds": 2.1667,
+    "eligible_rows": 13182,
+    "files_read": 50,
+    "manifest_sha256": "108e436464cefd502a7d685f7e62f247818f8d9a26d9acc0e2188b9e33623610",
+    "metadata_rows": 75699,
+    "pipeline_version": "1.0.0",
+    "rejected": {
+      "language": 49413,
+      "status": 13104
+    },
+    "seed": 20261021,
+    "selected": 50
+  },
+  "metadata_sha256": {
+    "p02401": "7d1543c352923c9a591b6e59c1931672e2646614a7cb358875cd2e79e0703f5b",
+    "p02402": "f5300696efd68b8a7c4a04381ab9a140efa57712d021bb3d10dbc0d65f8a5fd2",
+    "p02403": "fb8c49e3f307d5a67daf4e686b7b86004d137ba36662cf9c4d2b5b2a52437736",
+    "p02407": "15873ad384ffaad247b80a14a39ab62ec9188925060111e229ecddcf1fe3f4cd",
+    "p02416": "985d84fe6d23f80b1669c8442998a3ae3db9d75ab1de07d1c37fb68e6a950e96"
+  },
+  "python_version": "3.12.14",
+  "recorded_at_utc": "2026-10-22T03:51:43.071119+00:00",
+  "selected_problem_ids": [
+    "p02401",
+    "p02402",
+    "p02403",
+    "p02407",
+    "p02416"
+  ],
+  "source": "IBM Project CodeNet",
+  "source_mode": "Selección sobre metadatos completos de cinco problemas y sus archivos C++ extraídos del tar.gz",
+  "source_subset_note": "El paquete reducido contiene solo las 50 filas y archivos seleccionados; reproduce el manifiesto, no la exploración completa.",
+  "verification": {
+    "all_passed": true,
+    "checks": {
+      "eligibility": true,
+      "historical_label": true,
+      "integrity": true,
+      "no_shared_problems": true,
+      "partition_assignment": true,
+      "quota": true,
+      "required_fields": true,
+      "unique_normalized_hashes": true,
+      "unique_submission_ids": true,
+      "unique_users_per_problem": true
+    },
+    "integrity_errors": [],
+    "user_overlap": {
+      "train/test": 0,
+      "train/validation": 0,
+      "validation/test": 0
+    }
+  }
+}
