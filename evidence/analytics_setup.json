@@ -1,0 +1,26 @@
+{
+  "extension": "analytics",
+  "version": "0.1.0",
+  "specify_version": "1.2.2",
+  "node": "v24.18.0",
+  "recorded_at_utc": "2026-10-22T14:27:44.913Z",
+  "enabled": true,
+  "registered_hook_events": 20,
+  "windows_show_command": "node .specify/extensions/analytics/src/show.ts",
+  "validation": {
+    "scope": "isolated workspace only",
+    "timer_started": true,
+    "timer_completed": true,
+    "timer_state_cleaned": true,
+    "summary_rendered": true,
+    "sandbox": "C:/Users/mesia/Documents/Codex/2026-10-21/te-x20/work/analytics-check-5oH3Ct"
+  },
+  "historical_iteration_metrics_created": false,
+  "retrospective_effort_person_hours": 3,
+  "retrospective_effort_basis": "user approximation; not measured",
+  "local_adjustments": [
+    "Windows show command",
+    "constitution/converge hook registration",
+    "start hook event mapping"
+  ]
+}

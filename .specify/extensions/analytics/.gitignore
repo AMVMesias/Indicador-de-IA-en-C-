@@ -1,0 +1,3 @@
+node_modules/
+# Local (machine-specific) config override – gitignored by the Spec Kit convention
+local-config.yml

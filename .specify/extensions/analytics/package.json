@@ -1,0 +1,39 @@
+{
+  "name": "spec-kit-analytics",
+  "version": "0.1.0",
+  "description": "A Spec Kit extension that collects performance metrics, execution times, and human-time-saved estimates seamlessly in the background.",
+  "type": "module",
+  "main": "src/controller.ts",
+  "scripts": {
+    "typecheck": "tsc",
+    "test": "node tests/run.ts"
+  },
+  "speckit": {
+    "hooks": {
+      "preCommand": "hooks/pre-command.js",
+      "postCommand": "hooks/post-command.js"
+    }
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "keywords": [
+    "spec-kit",
+    "analytics",
+    "metrics",
+    "performance"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fyloss/spec-kit-analytics.git"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "24.12.2",
+    "typescript": "5.9.3"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.1"
+  }
+}

@@ -1,0 +1,181 @@
+installed:
+  - analytics
+settings:
+  auto_execute_hooks: true
+hooks:
+  before_specify:
+    - extension: analytics
+      command: speckit.analytics.start
+      enabled: true
+      optional: false
+      priority: 10
+      prompt: Execute speckit.analytics.start?
+      description: Start analytics timer before specification
+      condition: null
+  after_specify:
+    - extension: analytics
+      command: speckit.analytics.end
+      enabled: true
+      optional: false
+      priority: 10
+      prompt: Execute speckit.analytics.end?
+      description: Record analytics after specification
+      condition: null
+  before_clarify:
+    - extension: analytics
+      command: speckit.analytics.start
+      enabled: true
+      optional: false
+      priority: 10
+      prompt: Execute speckit.analytics.start?
+      description: Start analytics timer before clarification
+      condition: null
+  after_clarify:
+    - extension: analytics
+      command: speckit.analytics.end
+      enabled: true
+      optional: false
+      priority: 10
+      prompt: Execute speckit.analytics.end?
+      description: Record analytics after clarification
+      condition: null
+  before_plan:
+    - extension: analytics
+      command: speckit.analytics.start
+      enabled: true
+      optional: false
+      priority: 10
+      prompt: Execute speckit.analytics.start?
+      description: Start analytics timer before planning
+      condition: null
+  after_plan:
+    - extension: analytics
+      command: speckit.analytics.end
+      enabled: true
+      optional: false
+      priority: 10
+      prompt: Execute speckit.analytics.end?
+      description: Record analytics after planning
+      condition: null
+  before_tasks:
+    - extension: analytics
+      command: speckit.analytics.start
+      enabled: true
+      optional: false
+      priority: 10
+      prompt: Execute speckit.analytics.start?
+      description: Start analytics timer before task generation
+      condition: null
+  after_tasks:
+    - extension: analytics
+      command: speckit.analytics.end
+      enabled: true
+      optional: false
+      priority: 10
+      prompt: Execute speckit.analytics.end?
+      description: Record analytics and run task projection after task generation
+      condition: null
+  before_taskstoissues:
+    - extension: analytics
+      command: speckit.analytics.start
+      enabled: true
+      optional: false
+      priority: 10
+      prompt: Execute speckit.analytics.start?
+      description: Start analytics timer before tasks-to-issues export
+      condition: null
+  after_taskstoissues:
+    - extension: analytics
+      command: speckit.analytics.end
+      enabled: true
+      optional: false
+      priority: 10
+      prompt: Execute speckit.analytics.end?
+      description: Record analytics after tasks-to-issues export
+      condition: null
+  before_implement:
+    - extension: analytics
+      command: speckit.analytics.start
+      enabled: true
+      optional: false
+      priority: 10
+      prompt: Execute speckit.analytics.start?
+      description: Start analytics timer before implementation
+      condition: null
+  after_implement:
+    - extension: analytics
+      command: speckit.analytics.end
+      enabled: true
+      optional: false
+      priority: 10
+      prompt: Execute speckit.analytics.end?
+      description: Record analytics after implementation
+      condition: null
+  before_checklist:
+    - extension: analytics
+      command: speckit.analytics.start
+      enabled: true
+      optional: false
+      priority: 10
+      prompt: Execute speckit.analytics.start?
+      description: Start analytics timer before checklist generation
+      condition: null
+  after_checklist:
+    - extension: analytics
+      command: speckit.analytics.end
+      enabled: true
+      optional: false
+      priority: 10
+      prompt: Execute speckit.analytics.end?
+      description: Record analytics after checklist generation
+      condition: null
+  before_analyze:
+    - extension: analytics
+      command: speckit.analytics.start
+      enabled: true
+      optional: false
+      priority: 10
+      prompt: Execute speckit.analytics.start?
+      description: Start analytics timer before analysis
+      condition: null
+  after_analyze:
+    - extension: analytics
+      command: speckit.analytics.end
+      enabled: true
+      optional: false
+      priority: 10
+      prompt: Execute speckit.analytics.end?
+      description: Record analytics after analysis
+      condition: null
+  before_constitution:
+    - extension: analytics
+      command: speckit.analytics.start
+      enabled: true
+      optional: false
+      priority: 10
+      description: Record before constitution
+      condition: null
+  after_constitution:
+    - extension: analytics
+      command: speckit.analytics.end
+      enabled: true
+      optional: false
+      priority: 10
+      description: Record after constitution
+      condition: null
+  before_converge:
+    - extension: analytics
+      command: speckit.analytics.start
+      enabled: true
+      optional: false
+      priority: 10
+      description: Record before converge
+      condition: null
+  after_converge:
+    - extension: analytics
+      command: speckit.analytics.end
+      enabled: true
+      optional: false
+      priority: 10
+      description: Record after converge
+      condition: null

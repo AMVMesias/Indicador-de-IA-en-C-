@@ -1,0 +1,16 @@
+# spec-kit-analytics project configuration
+# This file is managed by the Spec Kit config system.
+# Override any value here; use local-config.yml for machine-specific settings (gitignored).
+# Env vars also work: SPECKIT_ANALYTICS_<SECTION>_<KEY> (highest precedence).
+
+times:
+  splitByCommands: false   # true → per-command files under analytics/time/commands/
+
+humanEstimates:
+  commands: true           # estimate human time after every command
+  splitByCommands: false   # true → per-command estimate files
+  tasks: true              # project implementation time after the tasks command
+
+gitignore: false           # true → auto-append analytics folders to .gitignore
+
+# format: markdown         # uncomment and change to "json" for JSON output

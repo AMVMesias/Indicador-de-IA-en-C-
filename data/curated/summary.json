@@ -13,7 +13,7 @@
   },
   "classification_training_performed": false,
   "config_sha256": "e5799bb6e25862893b357ebc6df5b754baad2a3ab8873c09633021b8a3fe5dad",
-  "duration_seconds": 0.6423,
+  "duration_seconds": 1.0921,
   "eligible_rows": 50,
   "files_read": 50,
   "manifest_sha256": "108e436464cefd502a7d685f7e62f247818f8d9a26d9acc0e2188b9e33623610",

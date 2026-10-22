@@ -1,0 +1,124 @@
+schema_version: "1.0"
+
+extension:
+  id: analytics
+  name: "Spec Kit Analytics"
+  version: "0.1.0"
+  description: "Collects performance metrics seamlessly in the background: execution timing, LLM-powered human-time estimates, and task implementation projections."
+  author: "spec-kit-analytics"
+  repository: "https://github.com/Fyloss/spec-kit-analytics"
+  license: MIT
+
+requires:
+  speckit_version: ">=0.2.0"
+  tools:
+    - name: node
+      required: true
+
+provides:
+  commands:
+    - name: speckit.analytics.start
+      file: commands/speckit.analytics.start.md
+      description: "Record the start timestamp for the current command (pre-command hook)"
+
+    - name: speckit.analytics.end
+      file: commands/speckit.analytics.end.md
+      description: "Record the end timestamp, calculate duration, and trigger LLM estimates (post-command hook)"
+
+    - name: speckit.analytics.purge
+      file: commands/speckit.analytics.purge.md
+      description: "Delete collected analytics data for a specific spec or for all specs"
+
+    - name: speckit.analytics.show
+      file: commands/speckit.analytics.show.md
+      description: "Display collected analytics"
+
+hooks:
+  before_specify:
+    command: speckit.analytics.start
+    optional: false
+    description: "Start analytics timer before specification"
+  after_specify:
+    command: speckit.analytics.end
+    optional: false
+    description: "Record analytics after specification"
+
+  before_clarify:
+    command: speckit.analytics.start
+    optional: false
+    description: "Start analytics timer before clarification"
+  after_clarify:
+    command: speckit.analytics.end
+    optional: false
+    description: "Record analytics after clarification"
+
+  before_plan:
+    command: speckit.analytics.start
+    optional: false
+    description: "Start analytics timer before planning"
+  after_plan:
+    command: speckit.analytics.end
+    optional: false
+    description: "Record analytics after planning"
+
+  before_tasks:
+    command: speckit.analytics.start
+    optional: false
+    description: "Start analytics timer before task generation"
+  after_tasks:
+    command: speckit.analytics.end
+    optional: false
+    description: "Record analytics and run task projection after task generation"
+
+  before_taskstoissues:
+    command: speckit.analytics.start
+    optional: false
+    description: "Start analytics timer before tasks-to-issues export"
+  after_taskstoissues:
+    command: speckit.analytics.end
+    optional: false
+    description: "Record analytics after tasks-to-issues export"
+
+  before_implement:
+    command: speckit.analytics.start
+    optional: false
+    description: "Start analytics timer before implementation"
+  after_implement:
+    command: speckit.analytics.end
+    optional: false
+    description: "Record analytics after implementation"
+
+  before_checklist:
+    command: speckit.analytics.start
+    optional: false
+    description: "Start analytics timer before checklist generation"
+  after_checklist:
+    command: speckit.analytics.end
+    optional: false
+    description: "Record analytics after checklist generation"
+
+  before_analyze:
+    command: speckit.analytics.start
+    optional: false
+    description: "Start analytics timer before analysis"
+  after_analyze:
+    command: speckit.analytics.end
+    optional: false
+    description: "Record analytics after analysis"
+
+config:
+  defaults:
+    times:
+      splitByCommands: false
+    humanEstimates:
+      commands: true
+      splitByCommands: false
+      tasks: true
+    gitignore: false
+    # format: markdown  # uncomment and set to "json" to switch output format
+
+tags:
+  - analytics
+  - metrics
+  - performance
+  - time-tracking

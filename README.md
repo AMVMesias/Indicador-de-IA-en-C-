@@ -39,6 +39,28 @@ Spec Kit 1.2.2 está configurado con la integración oficial de Codex. Las habil
 
 El nombre Speckit-coverage corresponde al entregable académico de auditoría. La versión oficial instalada utiliza converge para revisar completitud; no incluye un comando central coverage. specs/001-curacion-codenet/coverage.md contiene la matriz de requisitos y su evidencia.
 
+## Medición con Spec Kit Analytics
+
+Analytics 0.1.0 está instalada y habilitada para Spec Kit 1.2.2. Requiere Node 24 o posterior. Registra el intervalo entre los hooks de inicio y cierre de las fases ejecutadas desde las habilidades de Codex. No cronometra toda la conversación ni el trabajo manual fuera de esas fases.
+
+Para consultar los registros desde Codex, usar `$speckit-analytics-show`. Desde PowerShell, en la raíz del proyecto:
+
+```powershell
+node .specify/extensions/analytics/src/show.ts
+```
+
+El resumen admite un identificador de especificación como argumento, por ejemplo `001-curacion-codenet`. Los registros de tiempo quedan en `specs/<especificacion>/analytics/time/commands.md`. Las estimaciones de esfuerzo generadas por IA quedan separadas en `analytics/time/humanEstimates/`. Esas estimaciones y sus comparaciones de ahorro no representan horas humanas medidas.
+
+Para una vista en tablas que reúna las métricas del incremento y las revisiones registradas por Analytics, ejecutar `python scripts/ver_metricas.py`. La opción `--guardar` genera también `evidence/matriz_metricas.md`, que puede abrirse en la vista previa Markdown de VS Code. Esta vista local consulta las evidencias; no inicia mediciones ni recalcula el esfuerzo humano.
+
+La instalación posterior al desarrollo no recupera los tiempos de la primera iteración. Su referencia de 3 horas-persona sigue siendo una aproximación retrospectiva. El estado inicial del resumen indica que aún no existen datos de Analytics. La comprobación del temporizador utilizó una carpeta aislada; `evidence/analytics_setup.json` registra el resultado de esa validación.
+
+Las fases deben ejecutarse secuencialmente: la extensión usa un único archivo de temporizador activo por proyecto. Los ajustes locales permiten mostrar resultados con Node en Windows y añaden hooks para constitution y converge. Una actualización de la extensión puede requerir volver a aplicar estos ajustes. Al copiar el proyecto a otro equipo, instalar las dependencias locales sin scripts de instalación:
+
+```powershell
+npm ci --omit=dev --ignore-scripts --prefix .specify/extensions/analytics
+```
+
 ## Atribución
 
 IBM Project CodeNet, con entregas de AIZU Online Judge y AtCoder. El subconjunto conserva la licencia CDLA Permissive 2.0 y su atribución en data/source_subset/. HISTORICO_CODENET expresa procedencia histórica y no certifica autoría humana individual. No se ejecuta el código de terceros.

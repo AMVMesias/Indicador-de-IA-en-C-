@@ -4,3 +4,5 @@ __pycache__/
 .pytest_cache/
 .ipynb_checkpoints/
 data/archive_cache/
+.specify/extensions/analytics/node_modules/
+.specify/.analytics-timer-state.json

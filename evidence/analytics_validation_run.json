@@ -1,0 +1,22 @@
+{
+  "scope": "verificacion posterior de la iteracion 001",
+  "original_development_time": false,
+  "command": [
+    "-m",
+    "pytest",
+    "tests",
+    "-q",
+    "--junitxml=evidence/pytest_analytics_validation.xml"
+  ],
+  "exit_code": 0,
+  "timing": {
+    "command": "verificacion-posterior",
+    "args": "Pruebas de aceptación ejecutadas después de cerrar la iteración 001; no mide el desarrollo original.",
+    "model": "",
+    "startTime": "2026-10-22T14:35:38.693Z",
+    "endTime": "2026-10-22T14:35:42.008Z",
+    "duration": "3s"
+  },
+  "stdout": "................                                                         [100%]\r\n16 passed in 1.42s\r\n",
+  "stderr": ""
+}
